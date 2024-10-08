@@ -122,7 +122,7 @@
 }
 
 /* Hover Header */
-.header-icono:hover, .header__icon--mic:hover{
+.header__icon:hover, .header__icon--mic:hover{
     background-color: var(--colorBoton);
     transition: 0.8s;
 } 
