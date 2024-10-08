@@ -17,11 +17,7 @@
     height: var(--porcentajeMaximo);
     object-fit: contain; 
 }
-.icon-space{
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: var(--colorDefuente);
-}
+
 .logo__titulo, .icono{
     font-size: 1.5rem;
 }
@@ -49,9 +45,10 @@
     height: var(--altoHeader);
     margin-right: 10px;
 }
-.header__icon-space{
+.header__icon{
     width: 40px;
     height: 40px;
+    text-decoration: none;
     background-color: var(--colorPrincipal);
     color: var(--colorDefuente);
     border: none;
@@ -101,49 +98,20 @@
     border: var(--tamanoBordes) var(--tipoBordes) var(--colorBordes);
     border-radius: 40px 0 0 40px; 
 }
-.input__boton{
-    width: 40px;
+.header__icon--search{
     min-width: 40px;
-    height: 40px;
     background-color: var(--colorBoton);
-    color: var(--colorDefuente);
-    border: none;
     border-radius: 0 40px 40px 0;
-    font-size: 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: var(--alineacionX);
-    align-items: var(--alineacionY);
 }
-.formulario__boton{
-    border-radius: var(--bordeRedondo);
-    width: 40px;
+.header__icon--mic{
     min-width: 40px;
-    height: 40px;
     background-color: var(--colorFormulario);
-    color: var(--colorDefuente);
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
 }
 /* Contenedor Perfil */
 .profile-container{
     display: flex;
     align-items: var(--alineacionY);
     gap: 25px;
-}
-.profile-container__icon-space{
-    width: 40px;
-    height: 40px;
-    background-color:var(--colorPrincipal);
-    color: var(--colorDefuente);
-    border: none;
-    border-radius: var(--bordeRedondo);
-    font-size: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: var(--alineacionY);
-    justify-content: var(--alineacionX); 
 }
 .profile-container__imagen{
     position: relative;
@@ -154,7 +122,7 @@
 }
 
 /* Hover Header */
-.icon-space:hover, .formulario__boton:hover{
+.header-icono:hover, .header__icon--mic:hover{
     background-color: var(--colorBoton);
     transition: 0.8s;
 } 
