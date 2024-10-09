@@ -18,8 +18,11 @@
     --colorDefuente2: #aaa;
     --ColorHoversidebar: #4c4c4c;
     --colorScrollbar: #717171;
+    --colorContainerchips: #181818;
+    --colorChips: #373737;
+    --colorHoverchips: #d4d4d4;
     
-
+    --tamanoColumn1: 240px;
     --altoHeader: 56px;
     --porcentajeMaximo: 100%;
     --separacion: 6px;

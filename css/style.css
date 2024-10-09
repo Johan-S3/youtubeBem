@@ -2,8 +2,8 @@
 /* Body */
 .content{
     display: grid;
-    grid-template-columns: 240px 1fr;
-    grid-template-rows: 56px 1fr;
+    grid-template-columns: var(--tamanoColumn1) 1fr;
+    grid-template-rows: var(--altoHeader) 1fr;
     grid-template-areas: 
     "header header"
     "sidebar main";
@@ -26,10 +26,8 @@
 ::-webkit-scrollbar-thumb{
     background-color: transparent;
     border-radius: 5px;
-    width: 6px;
 }
   
-
 
 /* HEADER */
 .header{
@@ -186,4 +184,46 @@
 }
 .sidebar:hover::-webkit-scrollbar-thumb{
     background-color: var(--colorScrollbar);
+}
+
+
+/* MAIN */
+.main{
+    grid-area: main;
+    overflow: hidden;
+}
+/* Chips container */
+.chips-container{
+    max-width: calc(100vw - var(--tamanoColumn1));
+    overflow-x: scroll;
+    background-color: var(--colorContainerchips);
+    display: flex;
+    padding-left: 14px;
+    border-top: var(--tamanoBordes) var(--tipoBordes) var(--colorBordes);
+    border-bottom: var(--tamanoBordes) var(--tipoBordes) var(--colorBordes);
+}
+.chips-container__chip{
+    margin: 12px 6px;
+    background-color: var(--colorChips);
+    padding: 6px 12px;
+    color: var(--colorDefuente);
+    cursor: pointer;
+    border-radius: 16px;
+    display: flex;
+    align-items: var(--alineacionY);
+    white-space: nowrap;
+    font-size: 0.9rem;
+    transition: 0.5s;
+}
+
+/* Hover chips */
+::-webkit-scrollbar{
+    height: 6px;
+}
+.chips-container:hover::-webkit-scrollbar-thumb{
+    background-color: var(--colorScrollbar);
+}
+.chips-container__chip:hover{
+    background-color: var(--colorHoverchips);
+    color: var(--colorPrincipal);
 }
