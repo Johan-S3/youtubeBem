@@ -285,3 +285,8 @@
     margin-top: 4px;
     gap: 5px;
 }
+
+/* Hover videos container */
+.video-container__content:hover{
+    background-color: var(--colorHovervideos);
+}
