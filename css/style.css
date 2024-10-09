@@ -192,11 +192,13 @@
     grid-area: main;
     overflow: hidden;
 }
+
+
 /* Chips container */
 .chips-container{
     max-width: calc(100vw - var(--tamanoColumn1));
     overflow-x: scroll;
-    background-color: var(--colorContainerchips);
+    background-color: var(--colorSecundario);
     display: flex;
     padding-left: 14px;
     border-top: var(--tamanoBordes) var(--tipoBordes) var(--colorBordes);
@@ -209,7 +211,6 @@
     color: var(--colorDefuente);
     cursor: pointer;
     border-radius: 16px;
-    display: flex;
     align-items: var(--alineacionY);
     white-space: nowrap;
     font-size: 0.9rem;
@@ -226,4 +227,61 @@
 .chips-container__chip:hover{
     background-color: var(--colorHoverchips);
     color: var(--colorPrincipal);
+}
+
+
+/* Videos Container */
+.video-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-template-rows: max-content;
+    gap: 18px;
+    padding: 20px;
+    background-color: var(--colorSecundario);
+    overflow-y: scroll;
+    height: calc(100vh - 118px);
+}
+.video-container__content{
+    margin-bottom: 25px;
+    position: relative;
+    width: var(--porcentajeMaximo);
+    padding: 8px;
+    transition: 1s;
+    border-radius: 12px;
+}
+.video-container__box{
+    position: relative;
+    width: auto;
+    height: 145px;
+    display: block;
+}
+.video-container__image{
+    object-fit: cover;
+    border-radius: 12px;
+}
+.video-container__detail{
+    display: flex;
+    padding-top: 12px;
+    color: var(--colorDefuente2);
+}
+.video-container__channel-logo{
+    position: relative;
+    min-width: 35px;
+    height: 35px;
+    border-radius: var(--bordeRedondo);
+    overflow: hidden;
+}
+.video-container__info{
+    margin-left: 12px;
+    font-size: 0.8rem;
+}
+.video-container__title{
+    font-size: 0.9rem;
+    color: var(--colorDefuente);
+    margin-bottom: 10px;
+}
+.video-container__views-upload{
+    display: flex;
+    margin-top: 4px;
+    gap: 5px;
 }
