@@ -1,0 +1,117 @@
+/* Todos lo selectores con la clase imagen */
+.imagen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--porcentajeMaximo);
+    height: var(--porcentajeMaximo);
+    object-fit: contain; 
+}
+/* HEADER */
+.header{
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--colorPrincipal);
+    width: var(--porcentajeMaximo);
+    height: var(--altoHeader);
+    color: var(--colorDefuente);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/* Contendedor logo */
+.header__logo-container{
+    display: flex;
+    align-items: var(--alineacionY);
+    gap: var(--separacion);
+    height: var(--altoHeader);
+    margin-right: 10px;
+}
+.logo__titulo{
+    font-size: 1.5rem;
+}
+.header__icon{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background-color: var(--colorPrincipal);
+    color: var(--colorDefuente);
+    border: none;
+    border-radius: var(--bordeRedondo);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: var(--alineacionY);
+    justify-content: var(--alineacionX); 
+    font-size: 1.5rem;
+}
+.logo{
+    display: flex;
+    gap: var(--separacion);
+    height: var(--porcentajeMaximo);
+    align-items: var(--alineacionY);
+    position: relative;
+    cursor: pointer;
+}
+.logo__youtube{
+    position: relative;
+    width: 30px;
+    height: 25px;
+}
+.logo__titulo{
+    letter-spacing: -1.5px;
+}
+/* contenedor Busquedas */
+.search-container{
+    display: flex;
+    align-items: var(--alineacionY);
+    gap: var(--separacion);
+    flex: 0 1 685px;
+    margin-right: 10px;
+}
+.search-container__formulario{
+    position: relative;
+    width: var(--porcentajeMaximo);
+    display: flex;
+}
+.formulario__input{
+    height: 40px;
+    width: var(--porcentajeMaximo);
+    background-color: var(--colorFormulario);
+    color: var(--colorDefuente);
+    padding: 12px;
+    outline: none;
+    border: var(--tamanoBordes) var(--tipoBordes) var(--colorBordes);
+    border-radius: 40px 0 0 40px; 
+}
+.header__icon--search{
+    min-width: 40px;
+    background-color: var(--colorBoton);
+    border-radius: 0 40px 40px 0;
+}
+.header__icon--mic{
+    min-width: 40px;
+    background-color: var(--colorFormulario);
+}
+/* Contenedor Perfil */
+.profile-container{
+    display: flex;
+    align-items: var(--alineacionY);
+    gap: 25px;
+}
+.profile-container__imagen{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: var(--bordeRedondo);
+}
+
+/* Hover Header */
+.header__icon:hover, .header__icon--mic:hover{
+    background-color: var(--colorBoton);
+    transition: 0.8s;
+} 
