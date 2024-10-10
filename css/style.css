@@ -290,3 +290,36 @@
 .video-container__content:hover{
     background-color: var(--colorHovervideos);
 }
+
+
+/* MEDIA */
+@media (max-width: 1200px){
+    .content{
+        grid-template-columns: 70px 1fr;
+    }
+    .sidebar{
+        padding-left: 5px;
+    }
+    .sidebar__texto, .sidebar__titulo{
+        display: none;
+    }
+    .sidebar__items{
+        padding: 0;
+    }
+    .sidebar__item{
+        padding: 0 20px;
+    }
+
+    .chips-container{
+        max-width: calc(100vw - 70px);
+    }
+}
+
+@media(max-width: 800px){
+    .formulario__input, .header__icon--mic{
+      display: none;
+    }
+    .header__icon--search{
+        border-radius: var(--bordeRedondo);
+    }
+}
